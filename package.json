@@ -1,0 +1,18 @@
+{
+  "name": "@korhanozbek/gptcli",
+  "version": "0.5.0",
+  "description": "Use ChatGPT in your terminal",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "gptcli": "index.js"
+  },
+  "keywords": ["chatGpt", "gpt", "openai"],
+  "author": "Korhan ÖZBEK<korhanozbek44@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "axios": "^1.3.5",
+    "inquirer": "^9.1.5"
+  }
+}
