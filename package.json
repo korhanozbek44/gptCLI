@@ -1,11 +1,15 @@
 {
   "name": "@korhanozbek/gptcli",
-  "version": "0.5.0",
+  "version": "0.5.2",
   "description": "Use ChatGPT in your terminal",
   "main": "index.js",
   "type": "module",
   "bin": {
     "gptcli": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/korhanozbek44/gptCLI.git"
   },
   "keywords": ["chatGpt", "gpt", "openai"],
   "author": "Korhan ÖZBEK<korhanozbek44@gmail.com>",
