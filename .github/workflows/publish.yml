@@ -10,15 +10,10 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
-          registry-url: https://registry.npmjs.org/
-          scope: '@korhanozbek'
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 7
-      - run: pnpm i
-      - run: pnpm build
-      - run: pnpm publish
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+          scope: 'korhanozbek'
+          always-auth: true
+      - run: npm publish --loglevel verbose
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
